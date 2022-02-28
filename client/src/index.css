@@ -1,0 +1,95 @@
+/* MOBILE */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* text-align: center; */
+}
+.App {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+.nav-bar{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: lightpink;
+    margin-bottom: 20px;
+}
+.nav-link, a {
+    font-size: 18px;
+    padding: 8px 16px;
+}
+.nav-link:hover, a:hover {
+    background-color: rgb(255, 213, 219);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.form-wrapper{
+    padding: 10px;
+}
+input, button {
+    padding: 3%;
+    margin-top: 3%;
+    font-size: 130%;
+}
+
+.blog-item {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.blog-item:nth-child(1n){
+    background-color: #e1ffe2;
+    padding: 16px;
+    margin: 3px;
+}
+.blog-item:nth-child(2n){
+    background-color: rgb(218, 243, 252);
+
+}
+.blog-item:hover {
+    background-color: lightgrey;
+}
+.blog-item > button {
+    width: unset;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.p-float-label {
+    margin: 30px;
+}
+
+/* LAPTOP */
+@media only screen and (min-width: 700px) {
+    .App {
+        display: flex;
+    }
+    form, .form-wrapper {
+        display: flex;
+        flex-direction: row;
+        width:400px;
+    }
+    input, button {
+        padding: 10px;
+        font-size: 14pt;
+        margin: 10px;
+        width: 100%;
+    }
+    button {
+        width: 70%;
+    }
+    .blog-item:nth-child(1n){
+        padding: 6px;
+    }
+
+
+  }
